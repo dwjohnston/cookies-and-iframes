@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch("http://localhost:3001/req1").then((res) => {
+      console.log(res);
+    });
+  })
+</script>
+<body>
+    <h1>I am the outer application</h1>
+    <iframe src="http://localhost:3001" width="100%" height="500px"></iframe>
+
+    <iframe src="http://localhost:3000" width="100%" height="500px"></iframe>
+
+</body>
+</html>
