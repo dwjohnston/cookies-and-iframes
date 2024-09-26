@@ -9,15 +9,16 @@
 <script>
 
   document.addEventListener("DOMContentLoaded", () => {
-    fetch("http://localhost:3001/req1").then((res) => {
+
+    // This is to demonstrate that CORS is behaving correctly
+    // We expect this should not be successful
+    fetch("http://localhost:3000/req1").then((res) => {
       console.log(res);
     });
   })
 </script>
 <body>
     <h1>I am the outer application</h1>
-    <iframe src="http://localhost:3001" width="100%" height="500px"></iframe>
-
     <iframe src="http://localhost:3000" width="100%" height="500px"></iframe>
 
 </body>
