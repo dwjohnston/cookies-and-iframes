@@ -10,7 +10,7 @@ npm run dev
 In another terminal
 
 ```
-npx serve -l 5500
+npx serve -l 4000
 ```
 
 Open browser to http://127.0.0.1:4000 (nb! NOT localhost:4000!)
